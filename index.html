@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container form "  >
+        <div class="title">personal <span class="sub-title">info</span></div>
+        <form >
+          <div class="user-detailes">
+         <div class="name-container">
+          <div class="input-box" >
+              <span class="deatiles"> first name<sup>*</sup> </span>
+              <input type="text" required  class="sub-input"/>
+            </div>
+            <div class="input-box last-name" > 
+              <span class="deatiles " > last name <sup>*</sup></span>
+              <input type="text" required  class="sub-input"/>
+            </div>
+         </div>
+            
+            <div class="input-box"style="font-size: 10px" >
+              <span class="deatiles"  > personal ID <sup style="color: #f99137;" >*</sup></span>
+              <input type="text" required class="sub-input"/>
+            </div>
+            <div class="input-box ">
+              <label for="" class="deatiles">car type<sup>*</sup></label>
+           
+                <select name="" id="" class="coustom-selec">
+                  <option value=""></option>
+                  <option value="a">a</option>
+                  <option value="b">b</option>
+                  <option value="b">b</option>
+                </select>
+     
+              <div class="input-box ">
+                  <label for="" class="deatiles">car model<sup>*</sup></label>
+              
+                    <select name="" id="" class="coustom-selec">
+                      <option value=""></option>
+                      <option value="a">a</option>
+                      <option value="b">b</option>
+                      <option value="b">b</option>
+                    </select>
+              
+                  <div class="input-box ">
+                      <label for="" class="deatiles">date of manufacturing<sup>*</sup></label>
+                  
+                        <select name="" id="" class="coustom-selec">
+                          <option value=""></option>
+                          <option value="a">a</option>
+                          <option value="b">b</option>
+                          <option value="b">b</option>
+                        </select>
+                   
+                      <div class="input-box ">
+                          <label for="" class="deatiles">car colour<sup>*</sup></label>
+                        
+                            <select name="" id="" class="coustom-selec">
+                              <option value=""></option>
+                              <option value="a">a</option>
+                              <option value="b">b</option>
+                              <option value="b">b</option>
+                            </select>
+                       
+            </div>
+        
+            <div class="input-box">
+              <span class="deatiles"> car numbers <sup>*</sup></span>
+              <input type="text" required class="sub-input"/>
+            </div>
+          </div>
+          <div class="date-joining deatiles">
+              <span class="joining-title">
+                  date of joining <sup></sup> <sup>*</sup>
+              </span>
+              <div class="date">
+                  <input type="date" class="sub-input" required>
+              </div>
+          </div>
+          <div class="name-container">
+            <div class="input-box" >
+                <span class="deatiles"> Upload your personal photo <sup>*</sup> </span>
+          
+                <div class="containerTwo ">
+                  <div class="wrapper">
+                    
+                    <div class="image">
+                      <img class="img-one" src="" />
+                    </div>
+                    <div class="content">
+                      <div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
+                      <div class="text">no file chosen , yet!</div>
+                    </div>
+                    <div id="cancel-btn"><i class="fas fa-times"></i></div>
+                    <div class="file-name">file name here</div>
+                  </div>
+                  <input id="default-btn" type="file" hidden  />
+                  <button onclick="defaultActiveBtn()" id="coustom-btn">
+                    choose a file
+                  </button>
+                </div>
+              </div>
+              <div class="input-box last-name" > 
+                <span class="deatiles " >Upload your personal ID   <span style="color: #fff;">(Back)</span></span>
+         
+                <div class="containerTwo">
+                  <div class="wrapper-two">
+                    <div class="image-two">
+                      <img class="img-two" src="" />
+                    </div>
+                    <div class="content">
+                      <div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
+                      <div class="text-two">no file chosen , yet!</div>
+                    </div>
+                    <div id="cancel-btn-2"><i class="fas fa-times"></i></div>
+                    <div class="file-name-two">file name here</div>
+                  </div>
+                  <input id="default-btn-two" type="file" hidden  />
+                  <button onclick="defaultActiveBtnTwo()" id="coustom-btn-two">
+                    choose a file
+                  </button>
+                </div>
+              </div>
+           </div>
+           <div class="input-box"style="font-size: 10px" >
+            <span class="deatiles"  > Upload your personal ID<span style="color: #fff;">(Front)</span></span>
+            <div class="containerTwo">
+              <div class="wrapper-3">
+                <div class="image-3">
+                  <img  class="img-3" src="" />
+                </div>
+                <div class="content">
+                  <div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
+                  <div class="text-3">no file chosen , yet!</div>
+                </div>
+                <div id="cancel-btn-3"><i class="fas fa-times"></i></div>
+                <div class="file-name-3">file name here</div>
+              </div>
+              <input id="default-btn-3" type="file" hidden />
+              <button onclick="defaultActiveBtnThree()" id="coustom-btn-3">
+                choose a file
+              </button>
+            </div>
+          </div>
+          <div class="input-box ">
+            <label for="" class="deatiles"> Upload your personal license<span style="color: #fff;">(Front)</span></label>
+        
+            <div class="containerTwo">
+              <div class="wrapper-4">
+                <div class="image-4">
+                  <img class="img-4" src="" />
+                </div>
+                <div class="content">
+                  <div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
+                  <div class="text-4">no file chosen , yet!</div>
+                </div>
+                <div id="cancel-btn-4"><i class="fas fa-times"></i></div>
+                <div class="file-name-4">file name here</div>
+              </div>
+              <input id="default-btn-4" type="file" hidden />
+              <button onclick="defaultActiveBtnFour()" id="coustom-btn-4">
+                choose a file
+              </button>
+            </div>
+           </div>
+           <div class="input-box ">
+            <label for="" class="deatiles"> Upload your personal license<span style="color: #fff;">(Back)</span><sup>*</sup></label>
+         
+            <div class="containerTwo">
+              <div class="wrapper-5">
+                <div class="image-5">
+                  <img class="img-5" src="" />
+                </div>
+                <div class="content">
+                  <div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
+                  <div class="text-5">no file chosen , yet!</div>
+                </div>
+                <div id="cancel-btn-5"><i class="fas fa-times"></i></div>
+                <div class="file-name-5">file name here</div>
+              </div>
+              <input id="default-btn-5" type="file" hidden />
+              <button onclick="defaultActiveBtnFive()" id="coustom-btn-5">
+                choose a file
+              </button>
+            </div>
+           </div>
+           <div class="input-box ">
+            <label for="" class="deatiles"> Upload your personal license<span style="color: #fff;">(front)<sup>*</sup></label>
+              <div class="containerTwo">
+                <div class="wrapper-6">
+                  <div class="image-6">
+                    <img  class="img-6" src="" />
+                  </div>
+                  <div class="content">
+                    <div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
+                    <div class="text-6">no file chosen , yet!</div>
+                  </div>
+                  <div id="cancel-btn-6"><i class="fas fa-times"></i></div>
+                  <div class="file-name-6">file name here</div>
+                </div>
+                <input id="default-btn-6" type="file" hidden />
+                <button onclick="defaultActiveBtnSix()" id="coustom-btn-6">
+                  choose a file
+                </button>
+              </div>
+        </div>
+        </div>
+        <div class="btn" style="background-color: #f99137">
+            <input type="submit" value="Submit"    class="btn-input">
+        </div>
+          <!-- end of user-detailes -->
+        </form>
+        </div>
+        <script>
+            const wrapper = document.querySelector(".wrapper");
+            const cancelBtn = document.querySelector('#cancel-btn')
+            const fileName = document.querySelector(".file-name");
+            const defaultBtn = document.querySelector("#default-btn");
+            const img = document.querySelector(".img-one");
+            let regExp = /[0-9a-zA-Z\^\&\@\{\}\[\]\,\$\=\!\-\#\(\)\.\%\+\~\_]+$/;
+            function defaultActiveBtn() {
+              defaultBtn.click();
+            }
+            defaultBtn.addEventListener("change", function () {
+              const file = this.files[0];
+              if (file) {
+                const reader = new FileReader();
+                reader.onload = function () {
+                  const result = reader.result;
+                  img.src = result;
+                  wrapper.classList.add("active");
+                };
+                cancelBtn.addEventListener('click',function(){
+                  img.src = '';
+                  wrapper.classList.remove("active");
+          
+                })
+                reader.readAsDataURL(file);
+              }
+              if (this.value) {
+                let valueStored = this.value.match(regExp);
+                fileName.textContent = valueStored;
+              }
+            });
+            //********************************
+            const cancelBtnTwo = document.querySelector('#cancel-btn-2')
+            const wrapperTwo = document.querySelector(".wrapper-two");
+            const fileNameTwo = document.querySelector(".file-name-two");
+            const imgTwo = document.querySelector(".img-two");
+            const defaultBtnTwo =document. querySelector('#default-btn-two')
+            function defaultActiveBtnTwo() {
+              defaultBtnTwo.click();
+            }
+            defaultBtnTwo.addEventListener("change", function () {
+              const file = this.files[0];
+              if (file) {
+                const reader = new FileReader();
+                reader.onload = function () {
+               
+                  const result = reader.result;
+                  imgTwo.src = result;
+                  wrapperTwo.classList.add("active");
+                };
+                cancelBtnTwo.addEventListener('click',function(){
+                  imgTwo.src = '';
+                  wrapperTwo.classList.remove("active");
+          
+                })
+                reader.readAsDataURL(file);
+              }
+              if (this.value) {
+                let valueStored = this.value.match(regExp);
+                fileNameTwo.textContent = valueStored;
+              }
+            });
+          //*************************
+          const cancelBtnThree = document.querySelector('#cancel-btn-3')
+          const wrapperThree = document.querySelector(".wrapper-3");
+            const fileNameThree = document.querySelector(".file-name-3");
+            const imgThree = document.querySelector(".img-3");
+            const defaultBtnThree =document. querySelector('#default-btn-3')
+          
+            function defaultActiveBtnThree() {
+              defaultBtnThree.click();
+            }
+            defaultBtnThree.addEventListener("change", function () {
+              const file = this.files[0];
+              if (file) {
+                const reader = new FileReader();
+                reader.onload = function () {
+               
+                  const result = reader.result;
+                  imgThree.src = result;
+                  wrapperThree.classList.add("active");
+                };
+                cancelBtnThree.addEventListener('click',function(){
+                  imgThree.src = '';
+                  wrapperThree.classList.remove("active");
+          
+                })
+                reader.readAsDataURL(file);
+              }
+              if (this.value) {
+                let valueStored = this.value.match(regExp);
+                fileNameThree.textContent = valueStored;
+              }
+            });
+            //*************************
+            const cancelBtnFour = document.querySelector('#cancel-btn-4')
+          
+            const wrapperFour = document.querySelector(".wrapper-4");
+            const fileNameFour = document.querySelector(".file-name-4");
+            const imgFour = document.querySelector(".img-4");
+            const defaultBtnFour =document. querySelector('#default-btn-4')
+          
+            function defaultActiveBtnFour() {
+              defaultBtnFour.click();
+            }
+            defaultBtnFour.addEventListener("change", function () {
+              const file = this.files[0];
+              if (file) {
+                const reader = new FileReader();
+                reader.onload = function () {
+               
+                  const result = reader.result;
+                  imgFour.src = result;
+                  wrapperFour.classList.add("active");
+                };
+                cancelBtnFour.addEventListener('click',function(){
+                  imgFour.src = '';
+                  wrapperFour.classList.remove("active");
+          
+                })
+                reader.readAsDataURL(file);
+              }
+              if (this.value) {
+                let valueStored = this.value.match(regExp);
+                fileNameFour.textContent = valueStored;
+              }
+            });
+            //*******************************
+            const cancelBtnFive = document.querySelector('#cancel-btn-5')
+          
+            const wrapperFive = document.querySelector(".wrapper-5");
+            const fileNameFive = document.querySelector(".file-name-5");
+            const imgFive = document.querySelector(".img-5");
+            const defaultBtnFive =document. querySelector('#default-btn-5')
+          
+            function defaultActiveBtnFive() {
+              defaultBtnFive.click();
+            }
+            defaultBtnFive.addEventListener("change", function () {
+              const file = this.files[0];
+              if (file) {
+                const reader = new FileReader();
+                reader.onload = function () {
+               
+                  const result = reader.result;
+                  imgFive.src = result;
+                  wrapperFive.classList.add("active");
+                };
+                cancelBtnFive.addEventListener('click',function(){
+                  imgFive.src = '';
+                  wrapperFive.classList.remove("active");
+          
+                })
+                reader.readAsDataURL(file);
+              }
+              if (this.value) {
+                let valueStored = this.value.match(regExp);
+                fileNameFive.textContent = valueStored;
+              }
+            });
+            //**********************************
+            const cancelBtnSix = document.querySelector('#cancel-btn-6')
+          
+            const wrapperSix = document.querySelector(".wrapper-6");
+            const fileNameSix = document.querySelector(".file-name-6");
+            const imgSix = document.querySelector(".img-6");
+            const defaultBtnSix =document. querySelector('#default-btn-6')
+          
+            function defaultActiveBtnSix() {
+              defaultBtnSix.click();
+            }
+            defaultBtnSix.addEventListener("change", function () {
+              const file = this.files[0];
+              if (file) {
+                const reader = new FileReader();
+                reader.onload = function () {
+               
+                  const result = reader.result;
+                  imgSix.src = result;
+                  wrapperSix.classList.add("active");
+                };
+                cancelBtnSix.addEventListener('click',function(){
+                  imgSix.src = '';
+                  wrapperSix.classList.remove("active");
+          
+                })
+                reader.readAsDataURL(file);
+              }
+              if (this.value) {
+                let valueStored = this.value.match(regExp);
+                fileNameSix.textContent = valueStored;
+              }
+            });
+ 
+          </script> 
+           
+</body>
+</html>
